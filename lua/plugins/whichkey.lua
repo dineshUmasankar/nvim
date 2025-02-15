@@ -8,7 +8,7 @@ return {
       keys = {}
     },
     spec = {
-      { '<leader>f', group = '[F]ind' },
+      { "<leader>f", group = "[F]ind" },
     }
   },
   keys = {
