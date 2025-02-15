@@ -11,6 +11,7 @@ return {
         markdown = true,
         treesitter = true,
         which_key = true,
+        gitsigns = true
       }
     }
   },

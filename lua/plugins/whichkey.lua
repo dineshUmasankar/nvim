@@ -1,7 +1,13 @@
 return {
   "folke/which-key.nvim",
-  event = "VeryLazy",
-  opts = {},
+  event = "VimEnter",
+  opts = {
+    delay = 0,
+    icons = {
+      mappings = vim.g.have_nerd_font,
+      keys = {}
+    }
+  },
   keys = {
     {
       "<leader>?",
