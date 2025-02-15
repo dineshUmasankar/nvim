@@ -6,6 +6,9 @@ return {
     icons = {
       mappings = vim.g.have_nerd_font,
       keys = {}
+    },
+    spec = {
+      { '<leader>f', group = '[F]ind' },
     }
   },
   keys = {
