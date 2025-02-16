@@ -10,10 +10,6 @@
     - Identify how to use blink.cmp
     - Identify how to integrate mason.nvim & nvim-lspconfig & mason-tool-installer
 
-* Customize Lualine
-    - We do not want time here
-    - Just editing mode (Normal / Visual / Visual Block)
-    - Current line and column being editted
-    - Git Status
+* Investigate GitUI and LazyGit as a backup for git operations
 
 * Setup keybind for Visual Block mode
