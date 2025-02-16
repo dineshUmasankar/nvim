@@ -16,9 +16,4 @@
     - Current line and column being editted
     - Git Status
 
-* Git Integration
-    - Vim Fugitive
-    - Neogit
-    - Lazygit via float term
-
 * Setup keybind for Visual Block mode
