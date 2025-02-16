@@ -9,6 +9,7 @@ return {
     },
     spec = {
       { "<leader>f", group = "[F]ind" },
+      { "<leader>g", group = "[G]it" },
     }
   },
   keys = {
