@@ -11,7 +11,7 @@ local opt = vim.opt
 opt.number = true
 
 -- Enable mouse mode, useful for resizing splits!
-opt.mouse = 'a'
+opt.mouse = "a"
 
 -- Add relative line numbers to help with jumping
 opt.relativenumber = true
@@ -30,7 +30,7 @@ opt.ignorecase = true
 opt.smartcase = true
 
 -- Keep sign column on by default
-opt.signcolumn = 'yes'
+opt.signcolumn = "yes"
 
 -- Configure how new splits should be opened
 opt.splitright = true
@@ -40,7 +40,7 @@ opt.splitbelow = true
 opt.scrolloff = 10
 
 -- Preview substitutions live, as typed!
-opt.inccommand = 'split'
+opt.inccommand = "split"
 
 -- Enable auto write
 opt.autowrite = true
