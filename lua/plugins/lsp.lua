@@ -45,37 +45,38 @@ return {
 				group = vim.api.nvim_create_augroup("kickstart-lsp-attach", { clear = true }),
 				callback = function(event)
 					local km = vim.keymap
+					local tscope = require("telescope.builtin")
 
 					km.set(
 						"n",
 						"<leader>gd",
-						require("telescope.builtin").lsp_definitions,
-						{ desc = "[g]oto [d]efinition", buffer = event.buffer }
+						tscope.lsp_definitions,
+						{ desc = "[G]oto [D]efinition", buffer = event.buffer }
 					)
 
 					km.set(
 						"n",
 						"<leader>gr",
-						require("telescope.builtin").lsp_references,
-						{ desc = "[g]oto [r]eferences", buffer = event.buffer }
+						tscope.lsp_references,
+						{ desc = "[G]oto [R]eferences", buffer = event.buffer }
 					)
 
 					km.set(
 						"n",
 						"<leader>gi",
-						require("telescope.builtin").lsp_implementations,
-						{ desc = "[g]oto [i]mplentation", buffer = event.buffer }
+						tscope.lsp_implementations,
+						{ desc = "[G]oto [I]mplentation", buffer = event.buffer }
 					)
 
 					km.set(
 						{ "n", "x" },
 						"<leader>ca",
 						vim.lsp.buf.code_action,
-						{ desc = "[c]ode [a]action", buffer = event.buffer }
+						{ desc = "[C]ode [A]action", buffer = event.buffer }
 					)
 
-					km.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "[r]e[n]ame", buffer = event.buffer })
-					km.set("n", "<leader>h", vim.lsp.buf.hover, { desc = "[h]over", buffer = event.buffer })
+					km.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "[R]e[n]ame", buffer = event.buffer })
+					km.set("n", "<leader>h", vim.lsp.buf.hover, { desc = "[H]over", buffer = event.buffer })
 					-- TODO: Keymaps associated with LSP
 					-- Goto Declaration
 					-- Type Definition

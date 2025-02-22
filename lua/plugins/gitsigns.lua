@@ -6,7 +6,7 @@ return {
 			local gitsigns = require("gitsigns")
 			local km = vim.keymap
 
-			km.set("n", "<leader>GB", gitsigns.blame, { desc = "[G]it [B]lame", buffer = bufnr })
+			km.set("n", "<leader>wl", gitsigns.blame, { desc = "Git Blame", buffer = bufnr })
 		end,
 		signs = {
 			add = { text = "+" },

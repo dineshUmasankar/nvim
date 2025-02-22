@@ -4,13 +4,13 @@ return {
 	cmd = { "ConformInfo" },
 	keys = {
 		{
-			"<leader>f",
+			"<leader>a",
 			function()
 				local cf = require("conform")
 				cf.format({ async = true, lsp_format = "fallback" })
 			end,
 			mode = "",
-			desc = "[F]ormat Buffer",
+			desc = "Format Buffer",
 		},
 	},
 	opts = {

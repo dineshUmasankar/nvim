@@ -5,14 +5,12 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim", -- Async Lua Lib
 	},
-	config = function()
-		local builtin = require("telescope.builtin")
-
-		local km = vim.keymap
-		km.set("n", "<leader>sf", builtin.find_files, { desc = "[s]earch [f]iles" })
-		km.set("n", "<leader>sw", builtin.live_grep, { desc = "[s]earch [w]ords" })
-		km.set("n", "<leader>Gb", builtin.git_branches, { desc = "[G]it [b]ranches" })
-		km.set("n", "<leader>Gc", builtin.git_commits, { desc = "[G]it [c]ommits" })
-		km.set("n", "<leader>Gs", builtin.git_status, { desc = "[G]it [s]tatus" })
-	end,
+	keys = {
+		{ "<leader>ff", require("telescope.builtin").find_files, desc = "[F]ind [F]iles" },
+		{ "<leader>fw", require("telescope.builtin").live_grep, desc = "[F]ind [W]ord" },
+		{ "<leader>fd", require("telescope.builtin").diagnostics, desc = "[F]ind [D]iagnostics" },
+		{ "<leader>wb", require("telescope.builtin").git_branches, desc = "Git [B]ranches" },
+		{ "<leader>wc", require("telescope.builtin").git_commits, desc = "Git [C]ommits" },
+		{ "<leader>ws", require("telescope.builtin").git_status, desc = "Git [S]tatus" },
+	},
 }
