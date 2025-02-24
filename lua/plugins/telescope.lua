@@ -6,11 +6,47 @@ return {
 		"nvim-lua/plenary.nvim", -- Async Lua Lib
 	},
 	keys = {
-		{ "<leader>ff", require("telescope.builtin").find_files, desc = "[F]ind [F]iles" },
-		{ "<leader>fw", require("telescope.builtin").live_grep, desc = "[F]ind [W]ord" },
-		{ "<leader>fd", require("telescope.builtin").diagnostics, desc = "[F]ind [D]iagnostics" },
-		{ "<leader>wb", require("telescope.builtin").git_branches, desc = "Git [B]ranches" },
-		{ "<leader>wc", require("telescope.builtin").git_commits, desc = "Git [C]ommits" },
-		{ "<leader>ws", require("telescope.builtin").git_status, desc = "Git [S]tatus" },
+		{
+			"<leader>ff",
+			function()
+				require("telescope.builtin").find_files()
+			end,
+			desc = "[F]ind [F]iles",
+		},
+		{
+			"<leader>fw",
+			function()
+				require("telescope.builtin").live_grep()
+			end,
+			desc = "[F]ind [W]ord",
+		},
+		{
+			"<leader>fd",
+			function()
+				require("telescope.builtin").diagnostics()
+			end,
+			desc = "[F]ind [D]iagnostics",
+		},
+		{
+			"<leader>wb",
+			function()
+				require("telescope.builtin").git_branches()
+			end,
+			desc = "Git [B]ranches",
+		},
+		{
+			"<leader>wc",
+			function()
+				require("telescope.builtin").git_commits()
+			end,
+			desc = "Git [C]ommits",
+		},
+		{
+			"<leader>ws",
+			function()
+				require("telescope.builtin").git_status()
+			end,
+			desc = "Git [S]tatus",
+		},
 	},
 }

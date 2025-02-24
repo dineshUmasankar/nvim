@@ -76,7 +76,6 @@ return {
 					)
 
 					km.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "[R]e[n]ame", buffer = event.buffer })
-					km.set("n", "<leader>h", vim.lsp.buf.hover, { desc = "[H]over", buffer = event.buffer })
 					-- TODO: Keymaps associated with LSP
 					-- Goto Declaration
 					-- Type Definition
@@ -136,15 +135,11 @@ return {
 			cmp.setup({
 				completion = { completeopt = "menu,menuone,noinsert" },
 				mapping = cmp.mapping.preset.insert({
-					["C-n"] = cmp.mapping.select_next_item(),
-					["C-p"] = cmp.mapping.select_prev_item(),
-
 					-- Back & Forth Scroll Docs
 					["C-b"] = cmp.mapping.scroll_docs(-4),
 					["C-f"] = cmp.mapping.scroll_docs(4),
-
-					-- Accept completion
-					["C-x"] = cmp.mapping.confirm({ select = true }),
+					["<CR>"] = cmp.mapping.confirm({ select = true }),
+					["C-e"] = cmp.mapping.abort(),
 				}),
 				sources = {
 					{ name = "lazydev", group_index = 0 },
