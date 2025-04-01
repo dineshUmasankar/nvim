@@ -17,6 +17,7 @@ return {
 			cmp = true,
 			mason = true,
 			fidget = true,
+			neotree = true,
 		},
 	},
 }

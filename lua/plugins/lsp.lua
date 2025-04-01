@@ -96,6 +96,7 @@ return {
 			local servers = {
 				lua_ls = {},
 				stylua = {},
+				bicep = {},
 			}
 
 			-- Ensure the servers & tools above are installed

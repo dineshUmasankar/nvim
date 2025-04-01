@@ -13,6 +13,7 @@ return {
 			{ "<leader>w", group = "Git" },
 			{ "<leader>f", group = "[F]ind" },
 			{ "<leader>r", group = "[R]ename" },
+			{ "<leader>e", group = "[E]xplore" },
 		},
 	},
 }

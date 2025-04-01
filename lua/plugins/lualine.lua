@@ -11,6 +11,9 @@ return {
 			sections = {
 				lualine_x = {},
 			},
+			extensions = {
+				"neo-tree",
+			},
 		})
 	end,
 }
