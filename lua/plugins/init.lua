@@ -287,5 +287,11 @@ later(function()
         checkout = 'master'
     })
     -- vim-sleuth doesn't need explicit setup
+
+    add({
+        source = 'nvim-mini/mini.pairs',
+        checkout = 'stable'
+    })
+    require('mini.pairs').setup()
 end)
 
