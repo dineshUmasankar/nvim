@@ -18,3 +18,6 @@ km.set('n', '<leader>fw', pick.builtin.grep_live, { desc = "Find by Word" })
 
 --- Find Buffer
 km.set('n', '<leader>fb', pick.builtin.buffers, { desc = "Find Buffer" })
+
+--- Go To Definition
+km.set('n', '<leader>grd', vim.lsp.buf.definition, { desc = "Go to Definition" })
