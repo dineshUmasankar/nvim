@@ -51,9 +51,6 @@ opt.shiftround = true -- Round indent
 opt.tabstop = 2 -- Number of spaces tabs count for
 opt.expandtab = true -- All tabs are expanded via spaces
 
--- Disable show mode (Enable once statusline is up and running)
--- opt.showmode = false
-
 -- Enable termguicolors
 opt.termguicolors = true
 
