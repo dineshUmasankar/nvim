@@ -6,4 +6,7 @@ require("config.keymaps")
 require("pluginmgr")
 
 -- Load plugins
+require("plugins")
+-- Load keymaps dedicated to plugin actions
+require("plugins.keymaps")
 

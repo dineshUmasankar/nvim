@@ -4,6 +4,10 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- Shorten vim.opt to opt
 local opt = vim.opt
 
