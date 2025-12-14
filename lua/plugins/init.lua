@@ -295,3 +295,10 @@ later(function()
     require('mini.pairs').setup()
 end)
 
+later(function()
+    -- Available Actions
+    add({
+        source = 'folke/which-key.nvim',
+        checkout = 'main'
+    })
+end)
